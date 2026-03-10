@@ -16,6 +16,7 @@ contato ={
 "@paola": "Paola",
 "@sheron": "Sheron",
 "@bruna": "Bruna",
+"@joao": "João",
 }
 
 print(contato)
@@ -59,6 +60,18 @@ contato.clear()
 print("Após clear:", contato)
 print("cópia:", copia)
 
+print("Número de contato:", len(contato))
+
+contato.pop("@camila")
+print("Após remover um:", len(contato))
+#verificar existencia
+if "@joao" in contato:
+    print(f"Encontrado: {contato['@joao']}")
+
+if "@inexistente" in contato:
+  print("Existe")
+else:
+  print("Não existe")
 
 #Dcionario vazio
 vazio ={}
